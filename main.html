@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quant-optik-tutor</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #00FF00;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            line-height: 1.4;
+        }
+        #terminal {
+            width: 80%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .prompt {
+            color: #00FF00;
+        }
+        .input-line {
+            display: flex;
+        }
+        #command-input {
+            background-color: transparent;
+            border: none;
+            color: #00FF00;
+            font-family: 'Courier New', monospace;
+            width: 80%;
+            outline: none;
+        }
+        .output {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="terminal">
+        <div class="output">
+            <pre>
+________                       __                             __  .__ __                 __          __                
+\_____  \  __ _______    _____/  |_              ____ _______/  |_|__|  | __           _/  |_ __ ___/  |_  ___________ 
+ /  / \  \|  |  \__  \  /    \   __\   ______   /  _ \\____ \   __\  |  |/ /   ______  \   __\  |  \   __\/  _ \_  __ \
+/   \_/.  \  |  // __ \|   |  \  |    /_____/  (  <_> )  |_> >  | |  |    <   /_____/   |  | |  |  /|  | (  <_> )  | \/
+\_____\ \_/____/(____  /___|  /__|              \____/|   __/|__| |__|__|_ \            |__| |____/ |__|  \____/|__|   
+       \__>          \/     \/                        |__|                \/                                           
+            </pre>
+            <p>Welcome to Quant-optik-tutor.</p>
+            <p>This is the place to learn about quantum optics, experimental and theoretical, optoelectronics, quantum gases, cold atoms, cavities, lasers and much more.</p>
+            <p>Type <span class="prompt">help</span> to know about how to operate the website.</p>
+        </div>
+        <div class="input-line">
+            <span class="prompt">user@quant-optik-tutor:~$ </span>
+            <input type="text" id="command-input" autofocus>
+        </div>
+    </div>
+
+    <script src="quant-optik.js"></script>
+</body>
+</html>
